@@ -1,0 +1,60 @@
+/* Import Fonts */
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap');
+
+/* Root Variables & Defaults */
+:root {
+  font-family: 'DM Sans', sans-serif;
+  color: #f4f0e8;
+  background: #10100f;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  font-optical-sizing: auto;
+  scroll-behavior: smooth;
+
+  /* Theme Colors */
+  --ink: #10100f;
+  --paper: #f4f0e8;
+  --orange: #ff642e;
+  --muted: #a6a39d;
+}
+
+/* Global Reset */
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 90px;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+}
+
+button,
+a {
+  font: inherit;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+/* Selection Highlight */
+::selection {
+  background: var(--orange);
+  color: var(--ink);
+}

@@ -1,0 +1,93 @@
+#root {
+  min-height: 100vh;
+}
+
+.app-shell {
+  overflow: hidden;
+  background: var(--ink);
+}
+
+.section-wrap {
+  width: min(1200px, calc(100% - 48px));
+  margin: 0 auto;
+}
+
+/* Eyebrow */
+.eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 11px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.eyebrow:before {
+  content: '';
+  width: 24px;
+  height: 2px;
+  background: var(--orange);
+}
+
+/* Section Heading */
+.section-heading {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: clamp(36px, 5vw, 64px);
+  line-height: 0.98;
+  letter-spacing: -0.06em;
+  margin: 14px 0 0;
+}
+
+/* Section Copy */
+.section-copy {
+  color: var(--muted);
+  line-height: 1.7;
+  max-width: 500px;
+}
+
+/* Pill Button */
+.pill-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  border: 0;
+  border-radius: 999px;
+  padding: 15px 21px;
+  background: var(--orange);
+  color: var(--ink);
+  font-weight: 700;
+  font-size: 13px;
+  transition: transform 0.2s, background 0.2s;
+}
+
+.pill-button:hover {
+  transform: translateY(-3px);
+  background: #ff8155;
+}
+
+/* Outline Button */
+.outline-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  border: 1px solid #ffffff35;
+  border-radius: 999px;
+  padding: 14px 20px;
+  font-size: 13px;
+  font-weight: 600;
+  transition: border 0.2s, background 0.2s;
+}
+
+.outline-button:hover {
+  border-color: var(--orange);
+  background: #ffffff0b;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .section-wrap {
+    width: calc(100% - 36px);
+  }
+}
