@@ -1,77 +1,111 @@
-import { MoveUpRight, Zap, Heart, Layers3 } from 'lucide-react';
-import './OurCompany.css';
+
+import { ArrowDownRight, ArrowUpRight } from "lucide-react";
+import "./OurCompany.css";
 
 const values = [
-  {
-    icon: Zap,
-    title: 'Made to move',
-    text: 'Lightweight comfort that keeps up with real life.',
-  },
-  {
-    icon: Heart,
-    title: 'Built with intention',
-    text: 'Thoughtful details. No unnecessary noise.',
-  },
-  {
-    icon: Layers3,
-    title: 'Your kind of different',
-    text: 'Every pair has personality. So do you.',
-  },
+  { number: "01", title: "MOVE YOUR WAY", text: "Your style. Your pace. Your rules." },
+  { number: "02", title: "BUILT FOR DAILY", text: "Comfort that keeps up with your everyday." },
+  { number: "03", title: "STAND APART", text: "Made for people who never follow the crowd." },
 ];
 
 export default function OurCompany() {
   return (
-    <section className="story-section" id="story">
-      <div className="section-wrap story-layout">
-        {/* Left Art Section */}
-        <div className="story-art">
-          <div className="story-circle circle-large" />
-          <div className="story-circle circle-small" />
-          <span className="story-stamp">
-            THARAN <br /> ORIGINALS
+    <section className="company-section" id="story">
+      <div className="company-topline">
+        <span>THARAN ORIGINALS®</span>
+        <span>INDEPENDENT SNEAKER CULTURE — EST. 2025</span>
+      </div>
+
+      <div className="company-hero">
+        <div className="company-heading">
+          <span className="company-eyebrow">
+            <span className="company-dot" />
+            NOT JUST ANOTHER SNEAKER BRAND
           </span>
 
-          <div className="story-art-copy">
-            <span>LESS ORDINARY</span>
-            <strong>MORE YOU.</strong>
-          </div>
+          <h2>
+            MADE TO
+            <br />
+            <span>MOVE.</span>
+            <br />
+            NEVER
+            <br />
+            <span className="company-outline">FOLLOW.</span>
+          </h2>
 
-          <span className="story-side-note">DESIGNED FOR YOUR EVERYDAY</span>
+          <p className="company-intro">
+            We believe your shoes should say something before you do.
+            THARAN is for the everyday movers, the rule breakers,
+            and everyone finding their own way forward.
+          </p>
+
+          <a href="#sneakers" className="company-link">
+            DISCOVER OUR COLLECTION
+            <ArrowUpRight size={18} />
+          </a>
         </div>
 
-        {/* Right Content Section */}
-        <div className="story-content">
-          <span className="eyebrow">Our company</span>
-          <h2 className="section-heading">
-            A little less <br /> ordinary.
-          </h2>
-          <p className="story-lead">
-            We believe your shoes should do more than get you there. They should
-            make the journey feel like yours.
-          </p>
-          <p className="section-copy">
-            THARAN started with a simple idea: premium-feeling sneakers
-            shouldn't need a loud logo or a loud price. Just honest design,
-            comfort you notice, and style that fits your own rhythm.
-          </p>
-          <a className="story-link" href="#contact">
-            Get to know us <MoveUpRight size={16} />
-          </a>
+        <div className="company-art">
+          <div className="company-art-label">THE EVERYDAY / 001</div>
+
+          <div className="company-image">
+            <img
+              src="/sneaker-1.png"
+              alt="THARAN premium sneaker campaign"
+            />
+            <span className="company-image-number">T—01</span>
+          </div>
+
+          <div className="company-stamp">
+            <span>NO</span>
+            <span>OFF</span>
+            <span>DAYS.</span>
+          </div>
+
+          <div className="company-art-caption">
+            <span>DESIGNED FOR YOUR EVERYDAY.</span>
+            <ArrowDownRight size={18} />
+          </div>
         </div>
       </div>
 
-      {/* Values Grid */}
-      <div className="section-wrap value-grid">
-        {values.map((value, i) => (
-          <article className="value-card" key={value.title}>
-            <div className="value-top">
-              <span>0{i + 1}</span>
-              <value.icon size={21} strokeWidth={1.5} />
-            </div>
-            <h3>{value.title}</h3>
-            <p>{value.text}</p>
-          </article>
-        ))}
+      <div className="company-marquee" aria-label="Move different, every day">
+        <div className="company-marquee-track">
+          {Array.from({ length: 4 }, (_, index) => (
+            <span key={index}>
+              MOVE DIFFERENT <i>|</i> OWN YOUR PACE <i>|</i>
+            </span>
+          ))}
+        </div>
+      </div>
+
+      <div className="company-values">
+        <div className="company-values-heading">
+          <span>OUR MINDSET / 003</span>
+          <h3>
+            THIS IS
+            <br />
+            <span>WHO WE ARE.</span>
+          </h3>
+        </div>
+
+        <div className="company-values-list">
+          {values.map((value) => (
+            <article className="company-value" key={value.number}>
+              <span className="company-value-number">{value.number}</span>
+              <div>
+                <h4>{value.title}</h4>
+                <p>{value.text}</p>
+              </div>
+              <ArrowUpRight className="company-value-arrow" size={21} />
+            </article>
+          ))}
+        </div>
+      </div>
+
+      <div className="company-footer-line">
+        <span>THARAN® — ORIGINALS</span>
+        <span>GOOD SHOES. GOOD MOVES.</span>
       </div>
     </section>
   );

@@ -65,8 +65,8 @@
 }
 
 .hero-copy h1 {
-  font-family: "Space Grotesk", sans-serif;
-  font-size: clamp(64px, 7.3vw, 124px);
+  font-family: 'Arial Black', sans-serif;
+  font-size: 100px;
   letter-spacing: -0.085em;
   line-height: 0.88;
   margin: 34px 0 28px;
@@ -658,11 +658,3 @@
   }
 }
 
-/* Respect reduced motion preferences */
-
-@media (prefers-reduced-motion: reduce) {
-  .hero-shoe-frame,
-  .hero-shoe-frame img {
-    animation: none;
-  }
-}
