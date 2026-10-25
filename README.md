@@ -6,7 +6,7 @@ THARAN is a modern, premium sneaker website built with React and Vite. It featur
 
 ## 🌐 Live Demo
 
-🔗 **Live Website:** sneaker-website-six.vercel.app
+🔗 **Live Website:** https://sneaker-website-six.vercel.app/
 
 ## ✨ Features
 
