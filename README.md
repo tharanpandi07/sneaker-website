@@ -1,45 +1,118 @@
-# THARAN Sneaker Store
+# 👟 THARAN — Premium Sneaker Store
 
-A responsive React + Vite sneaker landing page with an automatically rotating hero sneaker, product cards, company story, contact section, and footer. Components and styles are split into separate files.
+**Move Different. Never Follow.**
 
-## Run locally
+THARAN is a modern, premium sneaker website built with React and Vite. It features a cinematic dark theme, bold streetwear typography, smooth animations, and an interactive hero section that showcases different sneakers.
 
-1. Install Node.js (LTS).
-2. Extract this folder and open it in VS Code.
-3. Open a terminal in the folder and run:
+## ✨ Features
+
+- 🎨 Premium black, ivory, and orange design
+- 👟 Interactive hero section with automatic sneaker slides
+- 🔄 Automatic sneaker transitions and manual slide controls
+- 🏷️ Dynamic product name, color, and price display
+- 🧡 Bold streetwear-inspired Our Company section
+- 🎞️ Smooth CSS animations and hover effects
+- 📱 Responsive layout for desktop, tablet, and mobile
+- 🧭 Component-based React architecture
+- ⚡ Fast development experience with Vite
+
+## 🛠️ Tech Stack
+
+- **Frontend:** React.js
+- **Build Tool:** Vite
+- **Styling:** CSS3
+- **Icons:** Lucide React
+- **Language:** JavaScript
+- **Version Control:** Git & GitHub
+
+## 📂 Project Structure
+
+```text
+tharan-sneaker-website/
+├── public/
+│   ├── sneaker-1.png
+│   ├── sneaker-2.png
+│   └── sneaker-3.png
+├── src/
+│   ├── components/
+│   │   ├── Hero.jsx
+│   │   ├── Hero.css
+│   │   ├── OurCompany.jsx
+│   │   └── OurCompany.css
+│   ├── App.jsx
+│   ├── main.jsx
+│   └── index.css
+├── index.html
+├── package.json
+├── package-lock.json
+├── .gitignore
+└── README.md
+```
+
+*The structure above represents the main components; additional files may exist in your project.*
+
+## 🚀 Getting Started
+
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/YOUR_USERNAME/tharan-sneaker-website.git
+```
+
+### 2. Navigate to the project folder
+
+```bash
+cd tharan-sneaker-website
+```
+
+### 3. Install dependencies
 
 ```bash
 npm install
+```
+
+### 4. Start the development server
+
+```bash
 npm run dev
 ```
 
-4. Open the local URL printed by Vite (usually `http://localhost:5173`).
+Open the local URL displayed in your terminal to view the website.
 
-## Production build
+## 🎨 Design Highlights
 
-```bash
-npm run build
-npm run preview
+### Hero Section
+A cinematic sneaker showcase with animated product transitions, bold headlines, product details, pricing, and interactive slide controls.
+
+### Our Company
+A streetwear-inspired brand story featuring oversized typography, editorial sneaker imagery, a scrolling slogan, and brand values.
+
+## 📸 Screenshots
+
+Add your website screenshots here after capturing them.
+
+```md
+![THARAN Homepage](screenshots/homepage.png)
+![Our Company Section](screenshots/our-company.png)
 ```
 
-## Project structure
+## 🔮 Future Improvements
 
-```text
-src/
-  App.jsx
-  main.jsx
-  components/
-    Navbar.jsx / Navbar.css
-    Hero.jsx / Hero.css
-    Products.jsx / Products.css
-    OurCompany.jsx / OurCompany.css
-    Contact.jsx / Contact.css
-    Footer.jsx / Footer.css
-  styles/
-    global.css
-    app.css
-```
+- 🛍️ Product listing and detailed product pages
+- 🛒 Shopping cart and checkout functionality
+- 🔎 Product search and category filters
+- 👤 User authentication
+- 💳 Payment gateway integration
+- 🗄️ Backend API and database integration
 
-The hero changes sneaker automatically every 4.5 seconds; use the dots or arrow to change it manually. Product bag buttons update the cart count in the navbar. Product photos and Google Fonts are loaded from external URLs, so an internet connection is needed for those assets.
+## 👨‍💻 Author
 
-**Demo note:** contact email and product prices are placeholders and should be updated before a real launch. This is a front-end demo; checkout and payment are not connected.
+**THARAN**
+
+- GitHub: [@tharanpandi07](https://github.com/tharanpandi07)
+
+---
+
+<p align="center">
+  <strong>THARAN ORIGINALS® — GOOD SHOES. GOOD MOVES.</strong>
+</p>
