@@ -91,15 +91,6 @@ A cinematic sneaker showcase with animated product transitions, bold headlines, 
 ### Our Company
 A streetwear-inspired brand story featuring oversized typography, editorial sneaker imagery, a scrolling slogan, and brand values.
 
-## 📸 Screenshots
-
-Add your website screenshots here after capturing them.
-
-```md
-![THARAN Homepage](screenshots/homepage.png)
-![Our Company Section](screenshots/our-company.png)
-```
-
 ## 🔮 Future Improvements
 
 - 🛍️ Product listing and detailed product pages
