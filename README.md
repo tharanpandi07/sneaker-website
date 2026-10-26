@@ -60,7 +60,7 @@ tharan-sneaker-website/
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/tharan-sneaker-website.git
+git clone https://github.com/tharanpandi07/sneaker-website
 ```
 
 ### 2. Navigate to the project folder
